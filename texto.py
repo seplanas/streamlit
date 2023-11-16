@@ -9,7 +9,7 @@ st.title("Titulo : Analítica de Datos")
 st.header("Este es un header")
 st.subheader("Este es un subheader")
 
-st.text(Texto: Hola streamlit")
+st.text("Texto: Hola streamlit")
 
 st.markdown("# Este es un markdown h1 \n ## Este es un h2 \n ### Este es un h3")
 st.header("Colores de texto y mensajes de error")
