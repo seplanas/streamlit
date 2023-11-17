@@ -23,7 +23,7 @@ st.help(range)
 st.header("Widgets:")
 st.subheader("Checkbox")
 
-if st.checkbox("Show/Hide")
+if st.checkbox("Show/Hide"):
   st.text("Mostrar u ocultar Widget")
   st.subheader("Radio buttons")
 
