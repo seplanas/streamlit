@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 st.title("Police incidents report")
 
-df = pd.read_csv("Police.csv")
+df = pd.read_csv("Policia.csv")
 
 st.markdown('The data shown...')
 
