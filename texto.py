@@ -55,3 +55,23 @@ st.subheader("Slider")
 
 level = st.slider("Cual es tu nivel?", 1, 5)
 st.write("Nivel:",level)
+
+st.subheader("Buttons")
+
+if st.button("Acerca"):
+  st.text("Streamlit es Cool")
+else:
+  st.text("")
+st.header("Como recibir una entrada y procesarla en streamlit")
+st.subheader("Recibiendo texto")
+
+firstname = st.text_input("Escriba su nombre:")
+if st.button("Aceptar"):
+  result = firstname.title()
+  st.success(result)
+st.subheader("Area de texto")
+
+message = st.text_area("Escriba un mensaje")
+if st.button("Aceptar "):
+  result = message.title()
+  st.success(result)
