@@ -86,5 +86,5 @@ st.text(f"{the_time}")
 st.header("Trabajar con archivos de imágener, audio o vídeos")
 
 st.subheader("Archivo de imagen")
-img = Image.open("calor y control.png")
+img = Image.open("https://github.com/seplanas/streamlit/blob/main/calor%20y%20control.png")
 st.image(img, width=300, caption="Simple Imagen")
