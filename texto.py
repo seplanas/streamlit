@@ -2,6 +2,7 @@ import datetime
 import time
 import pandas as pd
 import streamlit as st
+import numpy as np
 from PIL import Image
 
 @st.cache
@@ -130,3 +131,8 @@ chart_data = pd.DataFrame(
 )
 
 st.line_chart(chart_data, x='col1', y='col2', color='col3')
+
+st.sidebar.header("Acerca")
+st.sidebar.text("Tutorial de streamlit ")
+st.header("Trabajando con funciones")
+st.write(list(run_fxn(10)))
