@@ -86,4 +86,5 @@ st.text(f"{the_time}")
 st.header("Trabajar con archivos de imágener, audio o vídeos")
 
 st.subheader("Archivo de imagen")
-img = Image.open("")
+img = Image.open("calor y control.png")
+st.image(img, width=300, caption="Simple Imagen")
