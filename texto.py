@@ -97,7 +97,6 @@ st.write("Texto con write")
 st.write(range(10))
 st.header("Desplegando códifo puro y json")
 st.subheader("Código puro")
-st.code("import numpy as np")
 with st.echo():
   df = pd.DataFrame()
 st.subheader("Desplegando json")
