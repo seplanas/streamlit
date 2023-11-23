@@ -75,3 +75,15 @@ message = st.text_area("Escriba un mensaje")
 if st.button("Aceptar "):
   result = message.title()
   st.success(result)
+st.subheader("Entrada de fecha")
+
+today = st.date_input("Hoy es", datetime.datetime.now())
+st.text(f"{today}")
+st.subheader("Entrada de tiempo")
+
+the_time = st.time_input("La hora es:",datetime.time())
+st.text(f"{the_time}")
+st.header("Trabajar con archivos de imágener, audio o vídeos")
+
+st.subheader("Archivo de imagen")
+img = Image.open("")
