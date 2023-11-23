@@ -105,4 +105,28 @@ st.json({"nombre":"John","apellido":"Doe","genero":"masculino"})
 st.header("Mostrar barra de progreso, spinner y balloons")
 st.subheader("Barra de progreso")
 my_bar = st.progress(0)
+for p in range(10):
+  my_bar.progress(p + 1)
+st.subheader("Spinner")
+with st.spinner("Espere ..."):
+  time.sleep(5)
+  st.success("Finalizó!")
+st.subheader("Balloons")
 
+st.balloons()
+st.header("Trabajando con data science")
+df = pd.read_csv("HRDataset_v14.csv")
+st.subheader("Dataframe")
+st.dataframe(df)
+st.subheader("tabla")
+st.table(df.head())
+st.subheader("gráfica")
+chart_data = pd.DataFrame(
+    {
+        'col1' : np.random.randn(20),
+        'col2' : np.random.randn(20),
+        'col3' : np.random.choice(('a','b','c'), 20),
+    }
+)
+
+st.line_chart(chart_data, x='col1', y='col2', color='col3')
