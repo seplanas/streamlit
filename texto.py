@@ -88,3 +88,21 @@ st.header("Trabajar con archivos de imágener, audio o vídeos")
 st.subheader("Archivo de imagen")
 img = Image.open("https://github.com/seplanas/streamlit/blob/main/calor%20y%20control.png")
 st.image(img, width=300, caption="Simple Imagen")
+
+st.header("Otras opciones que permite la función write")
+
+st.subheader("Texto con write")
+st.write("Texto con write")
+st.write(range(10))
+st.header("Desplegando códifo puro y json")
+st.subheader("Código puro")
+st.code("import numpy as np")
+with st.echo():
+  df = pd.DataFrame()
+st.subheader("Desplegando json")
+st.text("Mostrando JSON")
+st.json({"nombre":"John","apellido":"Doe","genero":"masculino"})
+st.header("Mostrar barra de progreso, spinner y balloons")
+st.subheader("Barra de progreso")
+my_bar = st.progress(0)
+
