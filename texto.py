@@ -4,6 +4,10 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
+@st.cache
+def run_fxn(n: int) -> list:
+  return range(n)
+
 st.title("Titulo : Analítica de Datos")
 
 st.header("Este es un header")
